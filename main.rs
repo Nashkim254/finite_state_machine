@@ -1,3 +1,5 @@
+use std::io::{self, BufRead}
+
 enum State {
     Locked,
     UnLocked,
@@ -20,4 +22,13 @@ fn next_state(state: State, event: Event) -> State {
     }
 }
 
-fn main() {}
+fn main() {
+    //default state
+
+    let mut state = State::Locked;
+
+    let stdin = io::stdin();
+    for line in stdin.lock().lines(){
+        println!("{}", line.unwrap())
+    }
+}
