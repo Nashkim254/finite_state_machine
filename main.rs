@@ -35,6 +35,7 @@ fn main() {
         match line.unwrap().as_str() {
             "coin" => state = next_state(state, Event::Coin),
             "push" => state = next_state(state, Event::Push),
+            "q" => return,
             unknown => {
                 eprintln!("Error:Unknown Event {}", unknown);
             }
