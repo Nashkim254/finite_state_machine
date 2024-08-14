@@ -1,6 +1,6 @@
 # finite_state_machine
 
-A Finite State Machine implemented is the Rust Programming Language <br>
+A Finite State Machine implemented in the Rust Programming Language <br>
 Language : Rust
 
 ## ScreenShots
